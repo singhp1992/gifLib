@@ -18,9 +18,10 @@ public class GifController {
         return "home";
     }
 
+//     http://localhost:8080/gif/android-explosion
     @RequestMapping("/gif/{name}")
     public String gifDetails(@PathVariable String name, Model model) {
-        Gif gif = gifRepository.findByName("android-explosion");
+        Gif gif = gifRepository.findByName(name);
         model.addAttribute("gif", gif);
         return "gif-details";
     }
