@@ -13,4 +13,13 @@ public class GifRepository {
             new Gif("cowboy-coder", LocalDate.of(2015,2,13), "Grace Hopper", false),
             new Gif("infinite-andrew", LocalDate.of(2015,8,23), "Marissa Mayer", true)
     );
+
+    public Gif findByName(String name) {
+        for(Gif gif :ALL_GIFS) {
+            if(gif.getName().equals(name)) {
+                return gif;
+            }
+        }
+        return null;
+    }
 }
