@@ -3,7 +3,9 @@ package com.singh.giflib.data;
 import com.singh.giflib.model.Gif;
 import java.util.List;
 import java.time.LocalDate;
+import org.springframework.stereotype.Component;
 
+@Component
 public class GifRepository {
     private static final List<Gif> ALL_GIFS = Arrays.asList(
             new Gif("android-explosion", LocalDate.of(2015,2,13), "Chris Ramacciotti", false),

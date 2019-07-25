@@ -4,6 +4,7 @@
     <list default="true" id="c79ef8a8-a0aa-4e9a-8434-6ca63746211a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/singh/giflib/controller/GifController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/singh/giflib/controller/GifController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/singh/giflib/data/GifRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/singh/giflib/data/GifRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,5 +150,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/singh/giflib/data/GifRepository.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
