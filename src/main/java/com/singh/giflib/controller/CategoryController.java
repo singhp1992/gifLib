@@ -5,14 +5,14 @@ import com.singh.giflib.data.GifRepository;
 import com.singh.giflib.model.Category;
 import com.singh.giflib.model.Gif;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-@Component
+@Controller
 public class CategoryController {
     @Autowired
     private CategoryRepository categoryRepository;
