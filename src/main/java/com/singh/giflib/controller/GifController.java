@@ -8,13 +8,17 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.List;
+
 @Controller
 public class GifController {
     @Autowired
     private GifRepository gifRepository;
 
     @RequestMapping("/")
-    public String listGifs() {
+    public String listGifs(Model model) {
+        List<Gif> allGifs = gifRepository.getAllGifs();
+        model.addAttribute("gifs", allGifs);
         return "home";
     }
 
