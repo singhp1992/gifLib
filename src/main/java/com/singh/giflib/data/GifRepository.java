@@ -1,9 +1,11 @@
 package com.singh.giflib.data;
 
 import com.singh.giflib.model.Gif;
-import java.util.List;
-import java.time.LocalDate;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.List;
 
 @Component
 public class GifRepository {
@@ -17,7 +19,7 @@ public class GifRepository {
     );
 
     public Gif findByName(String name) {
-        for(Gif gif :ALL_GIFS) {
+        for(Gif gif : ALL_GIFS) {
             if(gif.getName().equals(name)) {
                 return gif;
             }
