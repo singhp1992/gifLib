@@ -9,4 +9,5 @@ public class GifController {
     public String listGifs() {
         return "home";
     }
+
 }
