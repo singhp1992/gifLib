@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class AnotherController {
-    @RequestMapping("/gif")
     @ResponseBody
     public String anotherOne() {
         return "Hoping for the best!";
