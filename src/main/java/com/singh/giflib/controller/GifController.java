@@ -5,10 +5,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import java.time.LocalDate;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.Autowired;
+
 
 @Controller
 public class GifController {
-
+    @Autowired
     private GifRepository gifRepository;
 
     @RequestMapping("/")
