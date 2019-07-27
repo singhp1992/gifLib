@@ -197,19 +197,19 @@ nav ul li.active, nav ul li:hover {
     padding: 20px;
 }
 
-.categories .row .col:nth-child(4n+1) .card {
+.students .row .col:nth-child(4n+1) .card {
     background-color: #6bb3ad;
 }
 
-.categories .row .col:nth-child(4n+2) .card {
+.students .row .col:nth-child(4n+2) .card {
     background-color: #b36b71;
 }
 
-.categories .row .col:nth-child(4n+3) .card {
+.students .row .col:nth-child(4n+3) .card {
     background-color: #95b36b;
 }
 
-.categories .row .col:nth-child(4n+4) .card {
+.students .row .col:nth-child(4n+4) .card {
     background-color: #896bb3;
 }
 
