@@ -9,9 +9,9 @@ import java.util.List;
 @Component
 public class StudentRepository {
     private static final List<Student> All_STUDENTS = Arrays.asList(
-            new Student(1, "PERSON 1"),
-            new Student(2, "PERSON 2"),
-            new Student(3, "PERSON 3")
+            new Student(1, "Jeff Ryke"),
+            new Student(2, "Anna Nemo"),
+            new Student(3, "Ricky Velo")
             );
 
     public List<Student> getAllStudents() {
