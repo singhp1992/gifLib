@@ -6,8 +6,7 @@
 
     <link rel="icon" th:href="@{/favicon.png}" />
 
-    <link rel="stylesheet" th:href="@{/vendor/materialize/css/materialize.css}" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />    <link rel="stylesheet" th:href="@{/app.css}" />
     <link rel="stylesheet" th:href="@{/app.css}" />
 
     <title>giflib | Students</title>
@@ -16,53 +15,28 @@
 <div class="navbar-fixed">
     <nav>
         <div class="container">
-            <a th:href="@{/}" class="brand-logo">Home</a>
-            <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
+            <ul class="options">
+                <li><a th:href="@{/}">Home</a></li>
                 <li class="active"><a th:href="@{/students}">Students</a></li>
                 <li><a th:href="@{/mentors}">Mentors</a></li>
                 <li><a th:href="@{/courses}">Courses</a></li>
-                <li><a th:href="@{/content}">content</a></li>
-            </ul>
-            <ul id="mobile-nav" class="side-nav">
-                <li class="active"><a th:href="@{/students}">Students</a></li>
-                <li><a th:href="@{/students}">Students</a></li>
-                <li><a th:href="@{/mentors}">Mentors</a></li>
-                <li><a th:href="@{/courses}">Courses</a></li>
-                <li><a th:href="@{/content}">content</a></li>
+                <li><a th:href="@{/content}">Content</a></li>
             </ul>
         </div>
     </nav>
 </div>
-<div class="students container">
-    <div class="row">
-        <!--
-            Repeat the div element for each object in the 'categories'
-            collection of the model map. Each object in the loop
-            should be named 'category'
-        -->
-        <div th:each="student : ${students}" class="col s12 l4">
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-title">
-                        <!--
-                            Set the href attribute of the a tag to be the URI to
-                            a specific category according to the category's id.
-                            For example, /category/1 or /category/2
-
-                            Then, set the text between the a tags to be the category name,
-                            coming from the 'name' field of the 'category' object
-                            in the model map
-                        -->
-                        <a th:href="@{'/student/' + ${student.id}}" th:text="${student.name}">Student Info</a>
-                    </div>
-                </div>
-            </div>
+<div class="content">
+    <div th:each="student : ${students}">
+        <div class="card">
+            <a th:href="@{'/student/' + ${student.id}}" th:text="${student.name}">Student Info</a>
         </div>
     </div>
 </div>
 
-<script th:src="@{/vendor/jquery/jquery-1.11.3.js}"></script>
+<div class="foot">
+    <footer>Made by Preeti Singh</footer>
+</div>
+
 <script th:src="@{/vendor/materialize/js/materialize.js}"></script>
 <script th:src="@{/app.js}"></script>
 </body>

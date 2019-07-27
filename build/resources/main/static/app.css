@@ -1,47 +1,59 @@
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
-    font-family: 'varela round', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 nav {
     background-color: #896bb3;
     box-shadow: none;
 }
 
-nav .brand-logo, nav ul li.active a {
-    color: #fefefe;
+.navbar-fixed .container {
+    top: 0;
+    right: 0;
+    position: fixed;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background: cornflowerblue;
+    box-shadow: 5px 5px 50px -10px #b6b6b6;
+    z-index: 10;
 }
 
-nav ul li a {
-    font-size: 1.1rem;
+
+.options {
+    list-style: none;
+    display: flex;
 }
 
-nav ul li a, nav .brand-logo span {
-    color: #d6c5ec;
+.options li {
+    margin-right: 20px;
 }
 
-nav ul li.active, nav ul li:hover {
-    background-color: inherit;
+a {
+    color: white;
+    text-decoration: none;
 }
 
-#mobile-nav, #mobile-nav li.active, #mobile-nav li:hover {
-    background-color: #37333d;
+a:visited {
+    color: white;
 }
 
-#mobile-nav li a {
-    font-size: 1.3rem;
-    color: #906fbc;
+a:hover {
+    text-decoration: underline;
 }
 
-#mobile-nav li.active a {
-    color: #fff;
+.content {
+    margin: 100px auto 0;
+    width: 95%;
+    height: 1000px;
+    /* height just for scrolling */
 }
-
-#mobile-nav li {
-    border-bottom: 1px solid #27252b;
-}
-
 
 ::-webkit-input-placeholder {
     color: #a29fa6;
@@ -63,12 +75,14 @@ nav ul li.active, nav ul li:hover {
 
 .col {
     margin-bottom: 0.75rem;
-    position: relative;
 }
 
-.container .row {
-    margin-left: 0;
-    margin-right: 0;
+.row {
+    /* margin-left: 0;
+    margin-right: 0; */
+     display: inline-flex;
+     justif-content: space-between;
+     align-items:center
 }
 
 .favorite {
@@ -123,10 +137,6 @@ nav ul li.active, nav ul li:hover {
     color: #a9a7ac;
 }
 
-#sidenav-overlay {
-    background-color: transparent;
-}
-
 .share {
     border: 1px solid #e3e1e6;
     border-radius: 4px;
@@ -146,39 +156,10 @@ nav ul li.active, nav ul li:hover {
     line-height: 36px;
 }
 
-.card {
-    box-shadow: none;
-}
-
-.card .card-content {
-    padding: 0;
-}
-
-.card .card-title {
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.card .card-title a {
-    color:#fff;
+.card a {
+    color: grey;
     display:block;
     padding: 20px;
-}
-
-.students .row .col:nth-child(4n+1) .card {
-    background-color: #6bb3ad;
-}
-
-.students .row .col:nth-child(4n+2) .card {
-    background-color: #b36b71;
-}
-
-.students .row .col:nth-child(4n+3) .card {
-    background-color: #95b36b;
-}
-
-.students .row .col:nth-child(4n+4) .card {
-    background-color: #896bb3;
 }
 
 .chip {
@@ -189,13 +170,6 @@ nav ul li.active, nav ul li:hover {
     border: 1px solid #E0DCE6;
 }
 
-@media only screen and (max-width: 992px) {
-    nav .brand-logo {
-        left: 0;
-        -webkit-transform: none;
-        transform: none;
-        position: static;
-    }
 
     .container {
         width: 100%;
@@ -214,8 +188,18 @@ nav ul li.active, nav ul li:hover {
     }
 
     .navbar-fixed .container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        top: 0;
+        right: 0;
+        position: fixed;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        background: cornflowerblue;
+        box-shadow: 5px 5px 50px -10px #b6b6b6;
+        z-index: 10;
     }
 
     .gifs {
@@ -251,4 +235,15 @@ nav ul li.active, nav ul li:hover {
     .chip {
         margin-left: 0.8rem;
     }
-}
+
+    .foot {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: cornflowerblue;
+       color: white;
+       text-align: center;
+       padding: 5px;
+       font-size: smaller;
+    }

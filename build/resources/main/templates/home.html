@@ -6,8 +6,7 @@
 
     <link rel="icon" th:href="@{/favicon.png}" />
 
-    <link rel="stylesheet" th:href="@{/vendor/materialize/css/materialize.css}" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />    <link rel="stylesheet" th:href="@{/app.css}" />
     <link rel="stylesheet" th:href="@{/app.css}" />
 
     <title>giflib | Home</title>
@@ -16,24 +15,18 @@
     <div class="navbar-fixed">
         <nav>
             <div class="container">
-                <a th:href="@{/}" class="brand-logo">Home</a>
-                <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
+                <ul class="options">
+                    <li><a th:href="@{/}">Home</a></li>
                     <li><a th:href="@{/students}">Students</a></li>
                     <li><a th:href="@{/mentors}">Mentors</a></li>
                     <li><a th:href="@{/courses}">Courses</a></li>
                     <li><a th:href="@{/content}">Content</a></li>
                 </ul>
-                <ul id="mobile-nav" class="side-nav">
-                    <li><a th:href="@{/students}">Students</a></li>
-                    <li><a th:href="@{/mentors}">Mentors</a></li>
-                    <li><a th:href="@{/courses}">Courses</a></li>
-                    <li><a th:href="@{/content}">content</a></li>
-                </ul>
             </div>
         </nav>
     </div>
-    <div class="gifs container">
+<!--    below had the class gif-->
+    <div class="content">
         <div class="row">
             <div th:each="gif : ${gifs}" class="col s12 l4">
                 <a th:href="@{'/gif/' + ${gif.name}}">
@@ -44,7 +37,10 @@
         </div>
     </div>
 
-<script th:src="@{/vendor/jquery/jquery-1.11.3.js}"></script>
+    <div class="foot">
+        <footer>Made by Preeti Singh</footer>
+    </div>
+
 <script th:src="@{/vendor/materialize/js/materialize.js}"></script>
 <script th:src="@{/app.js}"></script>
 </body>
