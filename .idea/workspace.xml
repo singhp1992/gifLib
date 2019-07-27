@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/singh/giflib/data/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/singh/giflib/data/StudentRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/singh/giflib/data/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/singh/giflib/data/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students.html" afterDir="false" />
     </list>

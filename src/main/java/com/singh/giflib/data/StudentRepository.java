@@ -11,7 +11,8 @@ public class StudentRepository {
     private static final List<Student> All_STUDENTS = Arrays.asList(
             new Student(1, "Jeff Ryke"),
             new Student(2, "Anna Nemo"),
-            new Student(3, "Ricky Velo")
+            new Student(3, "Ricky Velo"),
+            new Student(4, "Preeti Singh")
             );
 
     public List<Student> getAllStudents() {
