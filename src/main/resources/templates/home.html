@@ -6,10 +6,8 @@
 
     <link rel="icon" th:href="@{/favicon.png}" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />    <link rel="stylesheet" th:href="@{/app.css}" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" th:href="@{/app.css}" />
-
-    <title>giflib | Home</title>
 </head>
 <body>
     <div class="navbar-fixed">
@@ -27,14 +25,7 @@
     </div>
 <!--    below had the class gif-->
     <div class="content">
-        <div class="row">
-            <div th:each="gif : ${gifs}" class="col s12 l4">
-                <a th:href="@{'/gif/' + ${gif.name}}">
-                    <img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" />
-                    <a href="#" th:class="(${gif.favorite} ? 'un' : '') +'mark favorite'"></a>
-                </a>
-            </div>
-        </div>
+        <h1 class="welcome">Welcome to the Student Navigator</h1>
     </div>
 
     <div class="foot">
@@ -45,3 +36,12 @@
 <script th:src="@{/app.js}"></script>
 </body>
 </html>
+
+<!--<div class="row">&ndash;&gt;-->
+    <!--            <div th:each="gif : ${gifs}" class="col s12 l4">-->
+    <!--                <a th:href="@{'/gif/' + ${gif.name}}">-->
+    <!--                    <img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" />-->
+    <!--                    <a href="#" th:class="(${gif.favorite} ? 'un' : '') +'mark favorite'"></a>-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--        </div>-->

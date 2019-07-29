@@ -6,10 +6,8 @@
 
     <link rel="icon" th:href="@{/favicon.png}" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />    <link rel="stylesheet" th:href="@{/app.css}" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" th:href="@{/app.css}" />
-
-    <title>giflib | Students</title>
 </head>
 <body>
 <div class="navbar-fixed">
@@ -26,9 +24,10 @@
     </nav>
 </div>
 <div class="content">
+    <h1 class="welcome">All Students</h1>
     <div th:each="student : ${students}">
         <div class="card">
-            <a th:href="@{'/student/' + ${student.id}}" th:text="${student.name}">Student Info</a>
+            <a th:href="@{'/person/' + ${student.id}}" th:text="${student.name}">Student Info</a>
         </div>
     </div>
 </div>

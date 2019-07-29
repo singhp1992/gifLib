@@ -55,6 +55,11 @@ a:hover {
     /* height just for scrolling */
 }
 
+.welcome {
+    color:grey;
+    text-align:center;
+}
+
 ::-webkit-input-placeholder {
     color: #a29fa6;
 }
