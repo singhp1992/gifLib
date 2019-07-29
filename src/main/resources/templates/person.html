@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="icon" th:href="@{/favicon.png}" />
+
+    <link rel="stylesheet" th:href="@{/vendor/materialize/css/materialize.css}" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" th:href="@{/app.css}" />
+
+    <title th:text="'giflib | ' + ${gif.name}">giflib</title>
+</head>
+<body>
+<div class="navbar-fixed">
+    <nav>
+        <div class="container">
+            <ul class="options">
+                <li><a th:href="@{/}">Home</a></li>
+                <li class="active"><a th:href="@{/students}">Students</a></li>
+                <li><a th:href="@{/mentors}">Mentors</a></li>
+                <li><a th:href="@{/courses}">Courses</a></li>
+                <li><a th:href="@{/content}">Content</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="person container">
+    <a th:href="@{'/person/' + ${person.id}}" th:text="${person.name}">Student Info</a>
+</div>
+<div class="col s9">
+    <h4 th:text="${person.name}">Craig Dennis</h4>
+</div>
+
+
+<script th:src="@{/vendor/materialize/js/materialize.js}"></script>
+<script th:src="@{/app.js}"></script>
+</body>
+</html>
